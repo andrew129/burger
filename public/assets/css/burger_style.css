@@ -1,3 +1,82 @@
-.eat {
-    background: blue;
+
+html {
+    background-image: linear-gradient(rgb(204, 83, 27), rgb(204, 204, 32), rgb(158, 50, 17))
 }
+
+h1 {
+    position: absolute;
+    left: 600px;
+}
+
+#burger {
+    position: absolute;
+    top: 197px;
+    right: -70px;
+    margin-left: 2px;
+    background-color: rgb(43, 172, 43);
+    padding: 0;
+    width: 260px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: dotted 4px rgb(255, 72, 0)
+}
+
+img {
+    width: 99px;
+    height: 99px;
+}
+
+textarea {
+    height: 50px;
+    width:400px;
+    margin-left: 525px;
+    position: absolute;
+    top: 510px;
+}
+
+#submit {
+    position: absolute;
+    left: 533px;
+    top: 580px;
+    width: 28.25%;
+    height: 5%;
+    background-color: rgb(255, 94, 0);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+ul .pics {
+    text-decoration: none;
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+ul .pics2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+ul li {
+    list-style-type: none;  
+}
+
+.devoured {
+    margin-left: 400px;
+    position: absolute;
+    top: 280px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(255, 94, 0);
+}
+
+

@@ -1,21 +1,28 @@
-<h1>Burger Restaurant</h1>
+<h1 id='burger'>Burger Restaurant</h1>
 
-<ul>
-    {{#each burgers}}
-        {{#unless devoured}}
-            {{> burgers/burger-block devoured=true}}
-        {{/unless}}
-    {{/each}}
-</ul>
-<ul>
-    {{#each burgers}}
-        {{#if devoured}}
-            {{> burgers/burger-block devoured=false}}
-        {{/if}}
-    {{/each}}
-</ul>
+<div class='devoured'>
+    <ol>
+        {{#each burgers}}
+            {{#unless devoured}}
+                {{> burgers/burger-block devoured=true}}
+            {{/unless}}
+        {{/each}}
+    </ol>
+    <ol>
+        {{#each burgers}}
+            {{#if devoured}}
+                {{> burgers/burger-block devoured=false}}
+            {{/if}}
+        {{/each}}
+    </ol>
+    <ol>
+        {{#each burgers}}
+            {{> burgers/burger-block delete}}
+        {{/each}}
+    </ol>
+</div>
 
-<form>
-    <textarea name='choice' placeholder='Add a Burger'></textarea>
-    <button type='submit'>Add Burger</button>
+<form class='create-form'>
+    <textarea id='burgername' name='choice' placeholder='Add a Burger'></textarea>
+    <button id='submit' type='submit'>Add Burger</button>
 </form>
