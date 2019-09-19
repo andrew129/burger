@@ -45,6 +45,8 @@ textarea {
     background-color: rgb(255, 94, 0);
     font-size: 12px;
     font-weight: bold;
+    color: rgb(255, 218, 8);
+    border: dotted 4px rgb(255, 0, 0)
 }
 
 
