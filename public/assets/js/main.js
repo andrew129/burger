@@ -2,15 +2,16 @@ $(function() {
     $('.eat').on('click', function(event) {
         var id = $(this).data('id');
         console.log(id)
-        var devour = $(this).data('devoured');
+        var devour = $(this).data('devour');
         console.log(devour)
         let newEat = {
             devoured: devour
         }
 
-        $.ajax('/api/burgers/' + id, {
-            type: 'PUT',
-            data: newEat
+        $.ajax({
+            method: 'PUT',
+            data: newEat,
+            url: "/api/burgers/" + id
         }).then(
             function() {
                 console.log('changed devour to', newEat)

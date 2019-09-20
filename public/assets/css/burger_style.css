@@ -10,17 +10,18 @@ h1 {
 
 #burger {
     position: absolute;
-    top: 197px;
+    top: 190px;
     right: -70px;
     margin-left: 2px;
-    background-color: rgb(43, 172, 43);
+    background-color: rgb(14, 145, 14);
     padding: 0;
     width: 260px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    border: dotted 4px rgb(255, 72, 0)
+    border: dotted 4px rgb(255, 72, 0);
+    color: rgb(212, 212, 14);
 }
 
 img {

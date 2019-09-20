@@ -3,14 +3,14 @@
 <div class='devoured'>
     <ol>
         {{#each burgers}}
-            {{#unless devoured}}
+            {{#unless this.devoured}}
                 {{> burgers/burger-block devoured=true}}
             {{/unless}}
         {{/each}}
     </ol>
     <ol>
         {{#each burgers}}
-            {{#if devoured}}
+            {{#if this.devoured}}
                 {{> burgers/burger-block devoured=false}}
             {{/if}}
         {{/each}}
